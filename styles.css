@@ -1,0 +1,54 @@
+body {
+  margin-left: 10px;
+}
+
+.rectangle {
+    width: 250px;
+    border: solid black 2px;
+    font-weight: 600;
+}
+
+.wrapper {
+    margin-left: 348px;
+}
+
+.weird-green {
+    background-color: rgb(187, 232, 167);
+}
+
+.green {
+    color: green;
+}
+.orange {
+    background-color: orange;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.navbar-brand {
+    margin-left: 40px;
+}
+
+.red {
+    color: red;
+}
+
+
+.blue {
+    color: blue;
+}
+
+.table-wrapper {
+    border: solid 2px gray;
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 134px;
+  }
+}

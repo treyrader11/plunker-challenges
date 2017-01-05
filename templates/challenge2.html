@@ -1,0 +1,26 @@
+<div class="container" ng-controller="FizzBuzzCtrl">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1>{{ title }}</h1><hr/></br>
+            <div ng-repeat="number in numbers">
+                <div ng-if="number % 5 == 0 && number % 3 == 0">
+                    <p class="blue">FizzBuzz</p>
+                </div>
+                        
+                <div ng-if="number % 5 == 0">
+                    <p class="red">Buzz</p>
+                </div>
+                        
+                <div ng-if="number % 3 == 0">
+                    <p class="green">Fizz</p>
+                </div>
+                        
+                <div ng-if="number % 3 !== 0 && number % 5 !== 0">
+                    <p>{{ number }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+  

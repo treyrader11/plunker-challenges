@@ -1,0 +1,40 @@
+<div ng-controller="MonthsCtrl">
+    <h1>{{ title }}</h1><hr/><br/>
+    <div class="wrapper">
+        <div ng-repeat="month in months | orderBy: 'ordinal'">
+            <div ng-if="month.season=='fall'">
+                <div class="brown rectangle">
+                    <h4>{{ month.english }}</h4>
+                    <p>French word: {{ month.french }}</p>
+                    <p>Number of days: {{ month.days }}</p>
+                </div>
+                </div>
+            <div ng-if="month.season=='summer'">
+                <div class="orange rectangle">
+                    <h4>{{ month.english }}</h4>
+                    <p>French word: {{ month.french }}</p>
+                    <p>Number of days: {{ month.days }}</p>
+                </div>
+            </div>
+            <div ng-if="month.season=='spring'">
+                <div class="weird-green rectangle">
+                    <h4>{{ month.english }}</h4>
+                    <p>French word: {{ month.french }}</p>
+                    <p>Number of days: {{ month.days }}</p>
+                </div>
+            </div>
+            <div ng-if="month.season=='winter'">
+                <div class="rectangle">
+                    <h4>{{ month.english }}</h4>
+                    <p>French word: {{ month.french }}</p>
+                    <p>Number of days: {{ month.days }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                
+                        
+                        
+                        
+                  

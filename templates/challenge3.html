@@ -1,0 +1,39 @@
+
+<div class="container" ng-controller="CountriesCtrl">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1>{{ title }}</h1><hr/></br>
+                
+                <div class="table-wrapper text-center">
+                    <table ng-repeat="country in countries">
+                      <tr>
+                        <th>{{ country.name }}</th>
+                      </tr>
+                      <tr>
+                        <td><p>1960 Population: {{ country["1960"] | number }}</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>1970 Population: {{ country["1970"] | number }}</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>1980 Population: {{ country["1980"] | number }}</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>1990 Population: {{ country["1990"] | number }}</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>2000 Population: {{ country["2000"] | number }}</p></td>
+                      </tr>
+                      <tr>
+                        <td><p>2010 Population: {{ country["2010"] | number }}</p></td>
+                      </tr>
+                      <tr>
+                        <td><p style="color: red; font-size: 20px">Percentage for growth between 1960 and 2010: {{ (country["2010"] - country["1960"]) / country["1960"] | percentage:2  }}</p></td>
+                      </tr>
+                    </table>
+                </div>
+            
+            
+        </div>
+    </div>
+</div>
