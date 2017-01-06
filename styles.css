@@ -45,6 +45,30 @@ body {
     padding: 20px;
 }
 
+.country {
+    border: solid #eee 2px;
+    margin-top: 4px;
+}
+
+.country th {
+    font-size: 20px;
+}
+
+form {
+    margin-bottom: 5px;
+}
+
+input.search-country {
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    width: 196px;
+}
+
+.search-country:focus {
+    outline: none;
+}
+
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,

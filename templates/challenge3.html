@@ -3,9 +3,12 @@
     <div class="row">
         <div class="col-sm-12 text-center">
             <h1>{{ title }}</h1><hr/></br>
+                <form>
+                  <input class="search-country" type="text" ng-model="searchCountry" placeholder="United States" required />
+                </form>
                 
                 <div class="table-wrapper text-center">
-                    <table ng-repeat="country in countries">
+                    <table class="country" ng-repeat="country in countries | filter:{name: searchCountry}">
                       <tr>
                         <th>{{ country.name }}</th>
                       </tr>
@@ -28,7 +31,7 @@
                         <td><p>2010 Population: {{ country["2010"] | number }}</p></td>
                       </tr>
                       <tr>
-                        <td><p style="color: red; font-size: 20px">Percentage for growth between 1960 and 2010: {{ (country["2010"] - country["1960"]) / country["1960"] | percentage:2  }}</p></td>
+                        <td><p style="color: red">Percentage for growth between 1960 and 2010: {{ (country["2010"] - country["1960"]) / country["1960"] | percentage:2  }}</p></td>
                       </tr>
                     </table>
                 </div>
